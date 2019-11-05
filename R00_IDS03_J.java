@@ -2,8 +2,6 @@
  *  Compilation:  javac R00_IDS03_J.java
  *  Execution:    java R00_IDS03_J
  *
- *  Calls function getAbsAdd(x,y) with legal and illegal values
- *
  ******************************************************************************/
 
 import java.util.Scanner;
