@@ -22,7 +22,7 @@ public  class R02_EXP02_J {
 
 
    /*
-    * Rule 02. Characters and Strings (STR)
+    * Rule 02. Expression (EXP)
     * Do not use the Object.equals() method to compare two arrays
     */
 
