@@ -14,7 +14,7 @@ public  class R03_NUM02_J {
     long num2 = 2;
     long num3 = 0;
 
-    // Using Non-Compliant code ignoring values returned by methods resulting in no output or response of the delete status
+    // Using Non-Compliant code ignoring values possible divide by zero
     System.out.println("\nResult of Non-Compliant Code");
     result = divide(num1,num2);
     System.out.printf("%d / %d = %d\n", num1, num2, result);
@@ -29,7 +29,7 @@ public  class R03_NUM02_J {
     System.out.printf("%d / %d = %d\n", num1, num3, result);
 
 
-    // Using Compliant code using values returned by methods
+    // Using Compliant code to defensively catch divide by zero
     System.out.println("\nResult of Compliant Code");
     result = divideCompliant(num1,num2);
     System.out.printf("%d / %d = %d\n", num1, num2, result);
@@ -49,6 +49,11 @@ public  class R03_NUM02_J {
     return num1 / num2;
   }
 
+     /*
+      * Rule 03. Numeric Type and Operations(NUM)
+      * Ensure that division and remainder operations do not result in divide-by-zero errors
+      */
+
   public static long divideCompliant(long num1, long num2) {
     if(num2 == 0) {
       System.out.println("ERROR: Divide by zero");
@@ -60,10 +65,7 @@ public  class R03_NUM02_J {
 }
 
 
-     /*
-      * Rule 03. Numeric Type and Operations(NUM)
-      * Ensure that division and remainder operations do not result in divide-by-zero errors
-      */
+
 
 
 
