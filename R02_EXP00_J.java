@@ -7,7 +7,7 @@
 import java.io.File;
 import java.io.IOException;
 
-public  class R02_XP00_J {
+public  class R02_EXP00_J {
 
  /*
   * Rule 02. Expressions (EXP)
