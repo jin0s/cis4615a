@@ -3,7 +3,7 @@ import java.sql.Date;
 /******************************************************************************
  * Compilation: javac R05_OBJ05_J.java 
  * Execution: java R05_OBJ05_J
- *
+ * Example of returning a private object, can compromise integrity of the program
  ******************************************************************************/
 
 class MutableClass {
@@ -28,6 +28,7 @@ class MutableClass {
   /*
   * Rule 05. Object Orientation (OBJ)
   * Do not return references to private mutable class members
+  * Per: https://wiki.sei.cmu.edu/confluence/display/java/OBJ05-J.+Do+not+return+references+to+private+mutable+class+members
   */
   public Date getDateCompliant() {
     return (Date)d.clone();

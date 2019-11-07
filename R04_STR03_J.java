@@ -1,11 +1,9 @@
 /******************************************************************************
  *  Compilation:  javac R04_STR03_J.java
  *  Execution:    java R04_STR03_J
- *
+ *  Calls BigInteger but passing it the wrong data type
  ******************************************************************************/
 
-import java.io.File;
-import java.io.IOException;
 import java.math.BigInteger;
 
 public  class R04_STR03_J {

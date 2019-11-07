@@ -1,10 +1,9 @@
 /******************************************************************************
  *  Compilation:  javac R00_IDS03_J.java
  *  Execution:    java R00_IDS03_J
- *
+ *  Example of logging without sanitizing user inputs 
  ******************************************************************************/
 
-import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public  class R00_IDS03_J {

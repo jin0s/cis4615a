@@ -2,7 +2,7 @@
 /******************************************************************************
  *  Compilation:  javac R02_EXP02_J.java
  *  Execution:    java R02_EXP02_J
- *
+ *  Example of comparing object references not values
  ******************************************************************************/
 import java.util.Arrays;
 
@@ -24,6 +24,7 @@ public  class R02_EXP02_J {
    /*
     * Rule 02. Expression (EXP)
     * Do not use the Object.equals() method to compare two arrays
+    * Per: https://wiki.sei.cmu.edu/confluence/display/java/EXP02-J.+Do+not+use+the+Object.equals%28%29+method+to+compare+two+arrays
     */
 
     // Using Compliant code using values returned by methods

@@ -15,12 +15,13 @@ public  class R07_ERR00_J {
 
   public static void main(String[] args) throws IOException {
     // Initialize the state
-    String filename = "filethatdonotexist";
+    String filename = "filethatdonotexist.txt";
     boolean validFlag = false;
     Scanner scan = new Scanner(System.in);
 
     // This noncompliant code example simply prints the exception's stack trace:
     System.out.println("\nResult of Non-Compliant Code");
+    System.out.println("Trying to read the filethatdonotexist.txt");
     try {
       BufferedReader reader = new BufferedReader(new FileReader(filename));
       String line;
@@ -35,8 +36,10 @@ public  class R07_ERR00_J {
     /*
       * Rule 07. Exceptional Behavior (ERR)
       * Do not suppress or ignore checked exceptions
+      * Per: https://wiki.sei.cmu.edu/confluence/display/java/ERR00-J.+Do+not+suppress+or+ignore+checked+exceptions
       */
     System.out.println("\nResult of Compliant Code");
+    System.out.println("Trying to read the filethatdonotexist.txt");
       do {
         try {
           BufferedReader reader = new BufferedReader(new FileReader(filename));
@@ -52,6 +55,8 @@ public  class R07_ERR00_J {
         }
       } while (validFlag != true);
       System.out.println("found the file " + filename);
+
+      scan.close();
   }
 }
 

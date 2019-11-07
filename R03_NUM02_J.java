@@ -1,7 +1,7 @@
 /******************************************************************************
  *  Compilation:  javac `R03_NUM02_J.java
  *  Execution:    java R03_NUM02_J
- *  
+ *  Example of not catcing divide by zeros using divide() and divideCompliant()
  ******************************************************************************/
 
 
@@ -52,6 +52,7 @@ public  class R03_NUM02_J {
      /*
       * Rule 03. Numeric Type and Operations(NUM)
       * Ensure that division and remainder operations do not result in divide-by-zero errors
+      * Per: https://wiki.sei.cmu.edu/confluence/display/java/NUM02-J.+Ensure+that+division+and+remainder+operations+do+not+result+in+divide-by-zero+errors
       */
 
   public static long divideCompliant(long num1, long num2) {

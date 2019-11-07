@@ -1,11 +1,10 @@
 /******************************************************************************
  *  Compilation:  javac R02_XP00_J.java
  *  Execution:    java R02_XP00_J
- *
+ *  Calls deleteFile and deteleFileCompliant to show the difference of not catching method returns
  ******************************************************************************/
 
 import java.io.File;
-import java.io.IOException;
 
 public  class R02_EXP00_J {
 
